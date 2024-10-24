@@ -191,7 +191,7 @@ def get_packageData_atTime(time, pack_id = 0):
             package_address = str(package_table.find_package_address(pack))  + " " + str(package_table.get_packageCity(pack)) + ", " + str(package_table.get_packageState(pack)) + " " + str(package_table.get_packageZip(pack))
 
             package_duedate = package_table.get_packageDueDate(pack)
-            if pack2: == 9:
+            if pack2 == 9:
                 if time >= 675:
                     time_tot_min = package_table.get_deliv_time(pack)
                     time_min = str(int(package_table.get_deliv_time(pack))%60)
